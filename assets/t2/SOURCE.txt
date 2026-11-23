@@ -1,0 +1,1 @@
+booster_assets (BSD-3), commit 12a9751: robots/T2/T2_31dof_Revo2Hand/T2_31dof_Revo2Hand.xml and the meshes it references in robots/T2/T2_31dof_Revo2Hand/meshes/, built into t2_description/ by utils/build_t2_mjcf.py (fingers welded open, one box per hand over palm and fingers, the base T2_31dof's ankle pitch range).

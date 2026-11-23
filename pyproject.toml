@@ -1,0 +1,36 @@
+[project]
+name = "bfm-wm"
+version = "0.1.0"
+requires-python = ">=3.10,<3.14"
+dependencies = [
+  "mjlab>=1.6.0",
+  "torch>=2.7.0",
+  "matplotlib",
+  "pillow",
+  "onnxruntime>=1.23.2",
+]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[tool.uv]
+required-environments = ["sys_platform == 'linux' and platform_machine == 'x86_64'"]
+# CUDA 12.8 torch (Blackwell-capable); pinned to versions tested with this code.
+constraint-dependencies = ["torch==2.9.0", "warp-lang==1.16.0"]
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "--disable-plugin-autoload"  # the shell PYTHONPATH carries ROS Humble's Python 3.10 pytest plugins
+filterwarnings = [
+    # mjlab's own deprecation, not ours to fix: importing mjlab sets warp.config.quiet (mjlab/__init__.py:43)
+    "ignore:warp.config.quiet is deprecated:DeprecationWarning",
+]

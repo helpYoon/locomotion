@@ -1,0 +1,45 @@
+# T2 retarget pilot (port plan step 1.3): <date folder>/<clip> of dataset/bones_seed/soma_uniform/bvh/, then a group.
+# BONES-SEED soma_uniform has no crouch or dance clip by name; stand_up_lying is the deep knee/ankle proxy (it is one of
+# the 50 clips the name filter drops, so it is here only to stress the ranges).
+221116/walk_ff_loop_270_002__A064      to_pilot
+221118/walk_ff_loop_270_002__A072      to_pilot
+221011/walk_ff_loop_270_003__A049      to_pilot
+230102/walk_ff_loop_270_003__A094      to_pilot
+230308/walk_ff_loop_270_R_003__A255    to_pilot
+220728/walk_sideway_090_loop_002__A044 to_pilot
+220727/walk_sideway_090_loop_003__A037 to_pilot
+220713/walk_sideway_090_loop_004__A021 to_pilot
+220728/walk_sideway_090_start_001__A042 to_pilot
+220714/walk_sideway_left_loop_001__A028 to_pilot
+220713/walk_sideway_left_loop_002__A023 to_pilot
+220714/walk_sideway_right_loop_003__A025 to_pilot
+230905/walk_ff_loop_180_R_very_slow_001__A444 forward_speeds
+230905/walk_ff_loop_180_R_slow_001__A445 forward_speeds
+230905/walk_ff_loop_180_R_normal_pace_001__A443 forward_speeds
+230906/walk_ff_loop_180_R_very_fast_001__A448 forward_speeds
+210707/walk_fast_forward_normal_002__A006 forward_speeds
+220713/walk_forward_loop_002__A024     forward
+220713/walk_forward_start_001__A022    forward
+220713/walk_forward_stop_001__A022     forward
+221010/walk_ff_start_180_R_001__A046   forward
+230417/walk_180_R_001__A327            forward
+220713/walk_backward_loop_001__A022    backward
+220713/walk_backward_start_001__A022   backward
+220713/walk_backward_stop_002__A024    backward
+220713/walk_backward_loop_002__A024_M  backward
+220713/walk_sideway_045_loop_001__A023 sideways
+220713/walk_sideway_135_loop_003__A021 sideways
+220705/Sideway_Walk_Right_001__A018    sideways
+220713/walk_sideway_090_loop_001__A022_M sideways
+221010/idle_turn_360_001__A047         turning
+221010/idle_turn_360_001__A046_M       turning
+221010/turn_walk_360_003__A047         turning
+221010/walk_arc_cw_loop_002__A045      turning
+230906/walk_arc_cw_loop_R_fast_001__A447 turning
+220720/arc_walk_left_loop_002__A030    turning
+220720/turn_start_walk_090_001__A029   turning
+230103/neutral_turning_around_R_001__A098 turning
+220713/step_rotate_idle_000_002__A021  standing
+220713/step_rotate_idle_000_001__A022  standing
+220713/step_rotate_idle_090_002__A021  standing
+231010/stand_up_lying_R_002__A472      crouch_proxy

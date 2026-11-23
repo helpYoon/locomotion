@@ -1,0 +1,1 @@
+booster_assets (BSD-3), commit 12a9751: robots/T1/T1_29dof.urdf and the meshes it references, copied to t1_description/urdf/ and t1_description/meshes/; t1_description/mjcf/t1.xml is built from them and config/sysid.txt by utils/build_t1_mjcf.py. config/sysid.txt is holosoma's T1 config (Apache-2.0: config/LICENSE-holosoma, config/NOTICE-holosoma).

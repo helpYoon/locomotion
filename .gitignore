@@ -1,0 +1,28 @@
+# data, run outputs, papers/notes and cluster scripts
+/data/
+/dataset/*
+/logs/
+/docs/
+/tacc/
+
+# environment and caches
+.venv/
+__pycache__/
+*.pyc
+.cache/
+.pytest_cache/
+.ruff_cache/
+build_*.log
+
+# checkpoints, rendered videos, evaluation results, recordings at the repo root (utils/record_clips.py's traj.npz)
+*.pt
+*.mp4
+/*.npz
+results/
+
+# the old robot/t1.py's USD cache (it regenerated it from the MJCF; nothing writes it now)
+/assets/t1/t1_description/usd/
+
+# viewer window layout, MuJoCo's warning log
+imgui.ini
+MUJOCO_LOG.TXT
